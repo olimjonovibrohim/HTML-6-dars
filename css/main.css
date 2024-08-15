@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../Fonts/poppins/poppins-v5-latin_devanagari-regular.woff") format("woff"),
+    url("../Fonts/poppins/poppins-v5-latin_devanagari-regular.woff2") format("woff2");
+}
+body{
+    font-family: "Poppins",sans-serif;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-menu{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f1f1f1;
+}
+.main-menu-item{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.main-menu-item a{
+    color: #808080;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: inline-block;
+}
+.main-menu-item:hover a{
+    background-color: royalblue;
+    color: #ffffff;
+}
+.sub-menu{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 140px;
+    display: none;
+}
+.sub-menu-item{
+    list-style: none;
+    color: #808080;
+    padding: 10px 15px;
+}
+.sub-menu-item:hover{
+    color: white;
+    background-color: rgb(65,105,225);
+    z-index: -1;
+}
+.main-menu-item:hover > .sub-menu{
+    display: block;
+}
+.sub-menu-item > .sub-menu{
+    left: 100%;
+    top: 0;
+}
+.sub-menu-item:hover > .sub-menu{
+    display: block;
+}
+.main-menu-item:before{
+    content: '';
+    border: 20px solid transparent;
+    border-top-color: royalblue;
+    /*border-right-color: red;
+    border-bottom-color: yellow;
+    border-left-color: green;*/
+    position: absolute;
+    left: 18px;
+    bottom: -40px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
